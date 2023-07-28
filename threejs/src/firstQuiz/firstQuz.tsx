@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import {
   Scene,
   PerspectiveCamera,
@@ -81,6 +82,7 @@ const FirstQuiz: React.FC = () => {
 
   return (
     <div ref={mountRef}>
+      <Link to={"/"}>홈으로 가기</Link>
       <h1>안녕하세요 문제입니다!</h1>
       <pre>{str}</pre>
       <p>위의 코드를 실행해보면 파란 선이 보이지 않습니다</p>
